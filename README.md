@@ -1,22 +1,6 @@
-<div align="center">
-  <br />
-   
-  <br />
 
-  <div>
- 
-
-  </div>
 
 <h3 align="center">Startup Directory Platform</h3>
-
-   <div align="center">
-   
-    </div>
-</div>
-
-
-
 
 ## <a name="tech-stack">⚙️ Tech Stack</a>
 
