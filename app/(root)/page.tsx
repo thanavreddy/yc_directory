@@ -4,6 +4,7 @@ import { STARTUPS_QUERY } from "@/sanity/lib/queries";
 import { client } from "@/sanity/lib/client";
 import { sanityFetch, SanityLive } from "@/sanity/lib/live";
 import { auth } from "@/auth";
+import BanterLoader from "@/components/BanterLoader";
 export default async function Home({
   searchParams,
 }: {
@@ -23,7 +24,7 @@ export default async function Home({
           Connect with Entrepreneurs
         </h1>
         <p className="sub-heading !max-w-3xl">
-          Submit Ideas, Vote on Pitches and Get NOticed in Virtual Competetions
+          Submit Ideas, Vote on Pitches and Get Noticed in Virtual Competetions
         </p>
         <SearchForm query={query} />
       </section>

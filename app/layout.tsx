@@ -3,6 +3,8 @@ import localFont from "next/font/local";
 import "./globals.css";
 import 'easymde/dist/easymde.min.css'
 import { Toaster } from "@/components/ui/toaster";
+import { Suspense } from "react";
+import Loading from "./Loading";
 
 const workSans = localFont({
     src:[
@@ -69,13 +71,16 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
+      <Suspense fallback={<Loading/>}>
       <body
         className={workSans.variable}
       >
+        
         {children}
 
         <Toaster/>
       </body>
+      </Suspense>
     </html>
   );
 }
