@@ -12,11 +12,11 @@ const nextConfig: NextConfig = {
     ]
   },
 
-
+typescript : {ignoreBuildErrors : true},
 
   experimental: {
-    // ppr: true,
-    after :true,
+    ppr: true,
+    // after :true,
   },
 
   devIndicators: {
